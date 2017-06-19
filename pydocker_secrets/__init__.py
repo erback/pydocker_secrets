@@ -7,7 +7,7 @@ def load_secrets_from_dir(directory):
     """
 
     for filename in os.listdir(directory):
-        with open(os.path.join(filename, directory)) as f:
+        with open(os.path.join(directory, filename)) as f:
             # Yield the filename on the format "UPPER_UNDERSCORE" instead of "lower-dash"
             yield filename.replace('-', '_').upper(), f.read().strip()
 
