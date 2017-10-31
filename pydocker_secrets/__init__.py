@@ -32,9 +32,7 @@ def get_secret_or_load_from_env(key, secrets, default=None):
     """
 
     ret_val = secrets.get(key)
-
     if ret_val:
         return ret_val
-
-    return os.environ.get('key', default)
+    return os.environ.get(key, default)
 
