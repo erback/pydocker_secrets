@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='pydocker_secrets',
-      version='0.1',
+      version='0.2',
       description='A helper package for loading docker secrets into dict',
       url='http://github.com/storborg/funniest',
       author='erback',
